@@ -7,21 +7,23 @@
     <title>Nacionalidadee</title>
 </head>
 <body>
-    O País em que nasceu: <input type="text" name="txtnac" id="txtnac" />
-    <input type="button" value="verificar" onclick="confirmar()" />
-    <div id="res"></div>
-    <script>
-      function confirmar() {
-        var txtn = document.querySelector("input#txtnac");
-        var res = document.querySelector("div#res");
-        var nac = txtn.value;
-        res.innerHTML = `<p>Seu país de origem é <strong>${nac}</strong></p>`;
-        if (nac == "Brasil" || nac == "brasil") {
-          res.innerHTML += `<p>Você é Brasileiro`;
-        } else {
-          res.innerHTML += `<p>Você é Estrangeiro`;
-        }
-      }
-    </script>
+    <h1>Vamos ver se você pode permanecer no pais</h1>
+       <p style="display: inline-block;">Pais de origem</p> <input type="text" name="paiss" id="paiss">
+       <br>
+       <input type="submit" onclick="confirmar()">
+       <div id="res"></div>
+
+       <script>
+          function confirmar(){
+          var resp = window.document.getElementById('res')
+             var pais = document.getElementById('paiss')
+             var paiz = pais.value;
+             if (paiz =='Brasil' || pais =='brasil'){
+                resp.innerHTML += `Você mora no ${paiz}, você é brasileiro`
+             }else{
+              res.innerHTML += `Você mora no ${paiz}, você é estrangeiro`
+             }
+            }
+       </script>
 </body>
 </html>
