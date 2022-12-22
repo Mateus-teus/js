@@ -9,21 +9,21 @@
 </head>
 <body>
     <header>
-        <p>Vamos contar</p>
+       <h1>Vamos contar</h1>
     </header>
 
     <section>
-        <div>
-          <p><label for="inicio">Inicio</label> <input type="number" name="inicio" id="inicio" min="0"></p>
+        <div id="dados">
+          <p><label for="txti">Início</label>: <input type="number" name="inicio" id="txti" ></p>
 
-          <p><label for="fim">Fim</label> <input type="number" name="fim" id="fim" min="0"></p>
+          <p><label for="txtf">Fím</label>: <input type="number" name="fim" id="txtf"></p>
+          
+          <p><label for="txtp">Passo</label>: <input type="number" name="passo" id="txtp"></p>
 
-          <p><label for="passo">Passo</label> <input type="number" name="passo" id="passo" min="0"></p>
-
-        <input type="Submit" value="Contar" function="macacao">
+          <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
         <div id="res">
-            <p>Preparando para contar</p>
+            Preparando a contagem...
         </div>
     </section>
 

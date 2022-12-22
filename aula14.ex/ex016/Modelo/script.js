@@ -1,11 +1,12 @@
-function marcacao(){
-    var ini = window.document.getElementById('inicio')
-    var fi = document.getElementById('fim')
-    var pas = document.getElementById('passo')
-    var res = document.getElementById('res')
-    var c = 1
- 
-    for (var c = ini; c <= fim ; c = c + pas) {
-        res.append(c)
+function contar(){
+    let ini = document.getElementById('txti')
+    let fim = document.getElementById('txtf')
+    let passo = document.getElementById('txtp')
+    let res = document.getElementById('res')
+  
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length ==0){
+       window.alert('[Erro] Faltam dados!')
+    }else{
+        res.innerHTML = 'Contando: '
     }
 }
