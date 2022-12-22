@@ -6,6 +6,6 @@ function marcacao(){
     var c = 1
  
     for (var c = ini; c <= fim ; c = c + pas) {
-        res.innerHTML = `${c}`
+        res.append(c)
     }
 }
