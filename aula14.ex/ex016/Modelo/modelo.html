@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Super contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -14,11 +14,11 @@
 
     <section>
         <div id="dados">
-          <p><label for="txti">Início</label>: <input type="number" name="inicio" id="txti" ></p>
+          <p><label for="txti">Início</label>: <input type="number" name="inicio" id="txti" min="0"></p>
 
-          <p><label for="txtf">Fím</label>: <input type="number" name="fim" id="txtf"></p>
+          <p><label for="txtf">Fím</label>: <input type="number" name="fim" id="txtf" min="0"></p>
           
-          <p><label for="txtp">Passo</label>: <input type="number" name="passo" id="txtp"></p>
+          <p><label for="txtp">Passo</label>: <input type="number" name="passo" id="txtp" min="0"></p>
 
           <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
